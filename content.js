@@ -1,5 +1,5 @@
 (() => {
-  const addToListBtnSelector = '#myinfo_status.js-form-user-status-btn';
+  const Butsel = '#myinfo_status.js-form-user-status-btn';
 
   function isVisible(elem) {
     if (!elem) return false;
@@ -72,7 +72,7 @@
   }
 
   function tryAddToList(retries = 10) {
-    const addToListBtn = document.querySelector(addToListBtnSelector);
+    const addToListBtn = document.querySelector(Butsel);
     if (!addToListBtn) {
       console.log("Add to List butonu bulunamadı, 1 saniye sonra tekrar deneniyor...");
       if (retries <= 0) {
