@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "MAL Auto Completed + Rating (Detail Page)",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://myanimelist.net/anime/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
